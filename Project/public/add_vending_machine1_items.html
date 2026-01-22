@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Item to Vending Machine 1</title>
+  <link rel="stylesheet" href="./css/add_items.css">
+  <script src="./js/vending_machine.js"></script>
+</head>
+<body> <!-- Item , cost ,image, availability, quantity-->
+
+<div class="container">
+  <h1>Add New Item to Vending Machine 1</h1>
+  
+  <form id="insertForm" method="post" onsubmit="addVending1ItemData();return false">
+    <label for="item_name">Item Name:</label><br>
+    <input type="text" id="name_tb" name="item_name" maxlength="200" required><br>
+
+    <label for="item_cost">Item Cost:</label><br>
+    <input type="number"  id="cost" name="item_cost" step="0.1" required><br>
+
+    <label for="item_image">Item Image(URL):</label><br>
+    <input type="text" id="image_tb" name="item_image" maxlength="255" required><br>
+
+    <label for="availability">Item Availability:</label><br>
+    <input type="number" id="availability" name="availability" min="0" max="1" required><br>
+   
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="item_quantity" min="0" required><br><br>
+
+    <button id="additem" type="submit">Add Item</button> 
+  </form>
+</div>  
+  
+</body>
+</html>

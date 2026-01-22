@@ -1,0 +1,80 @@
+body{
+  font-family: Calibri;
+  background-color:#6F8695; 
+  box-sizing: border-box;
+  justify-self: center;
+}
+
+h1{
+  text-align: center; 
+  color: black;
+}
+
+form{
+  max-width: 600px;
+  align-self: center;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight:500;
+}
+
+.container{
+  min-width: 430px;
+  width: 100%;
+  background:#f0f4f8;
+  margin-top: 90px;
+  padding: 1em 1em 2em 1em;
+  border-radius: 20px;
+  height:605px;
+}
+
+input{
+  width:290px;
+  padding: 10px;
+  margin-left:80px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1.5px solid black;
+  border-radius: 5px;
+}
+
+select{
+  width:312px;
+  padding: 10px;
+  margin-left:80px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1.5px solid black;
+  border-radius: 5px; 
+}
+
+
+label{
+  margin-left:80px;
+}
+
+#updatebutton{
+  background-color: #ffeba7;
+  color: #102770;
+  border: 1px solid;
+  border-radius: 5px;
+  height: 44px;
+  width: 134px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 170px;
+  text-transform: uppercase;
+  padding: 0 30px;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+
+
+#updatebutton:hover{
+  cursor: pointer;
+  background-color: #1f2029;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+

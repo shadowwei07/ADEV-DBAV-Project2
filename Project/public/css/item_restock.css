@@ -1,0 +1,65 @@
+#dynamicItemRestockDataList, #dynamicItemRestock2DataList {
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh; 
+}
+
+body{
+  margin: 0px;
+}
+
+header{
+  font-family: Arial;
+  background-color:#0056b3;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style the table */
+.table {
+  border-collapse: collapse;
+  font-size: 16px;
+  width: 75%;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+#itemid,#cost,#quantity,#restock{
+  text-align: center;
+}
+
+.table thead tr {
+  background-color:black;
+  color: white;
+  text-align: left;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 3px solid black;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+img{
+  vertical-align: middle;
+  mix-blend-mode: multiply;
+}

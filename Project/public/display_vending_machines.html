@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display all Vending Machines</title>
+  <link rel="stylesheet" href="./css/home.css">
+  <script src="./js/vending_machine.js"></script>
+</head>
+<body onload="loadVendingMachinesData()">
+  <header>Vending @ TP</header>
+  <p id="p"><strong>This is the admin portal for managing vending machines in Temasek Polytechnic</strong></p>
+
+  
+  <div>
+    <table>
+      <tr>
+        <td>
+          <img src="/images/vending_machine.png" id="vending1image" width="300" height="420">
+        </td>
+        <td>
+          <img src="/images/vending_machine.png" id="vending2image" width="300" height="420">
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+<div>
+  <br>
+  <input type="button" id="vending1button" onclick="location.href='display_vending_machine1_items.html'" value="More information">
+  <input type="button" id="vending2button" onclick="location.href='display_vending_machine2_items.html'" value="More information">
+</div> 
+
+
+  <!-- Dynamic Content Section-->
+  <div id="dynamicVendingMachineDataList">
+    <div class="container">
+      <table>
+        <tr>
+          <td>
+            <div class="card">
+              <h2>Vending Machine No.</h2>
+              <p><strong>Block:</strong>1</p>
+              <p><strong>Floor:</strong>1</p>
+              <p><strong>Payment Method:</strong>Cash/Credit & Debit Card</p>
+              <button>More information</button>
+            </div>
+          </td> 
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  
+
+     
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

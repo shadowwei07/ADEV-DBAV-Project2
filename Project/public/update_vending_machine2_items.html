@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Vending Machine 2 Items</title>
+  <link rel="stylesheet" href="./css/update_items.css">
+  <script src="./js/vending_machine.js"></script>
+</head>
+<body onload="loadVending2ItemDetail()">
+
+<div class="container">
+  <h1> Update Vending Machine 2 Item </h1>
+
+  <form id="updateVending2ItemsForm" method="post" onsubmit="updateVending2ItemsData();return false">
+    <label for="id">Item ID:</label><br>
+    <input type="text" id="id" name="id" readonly value=""><br>
+    
+    <label for="item_name">Item Name:</label><br>
+    <input type="text" id="name_tb" name="item_name" maxlength="200" required><br>
+
+    <label for="item_cost">Item Cost:</label><br>
+    <input type="number" id="cost" name="item_cost" step="0.1" required><br>
+
+    <label for="item_image">Item Image(URL):</label><br>
+    <input type="text" id="image_tb" name="item_image" maxlength="255" required><br>
+
+    <label for="availability">Item Availability:</label><br>
+    <select name="availability" id="availability">
+      <option disabled>Please Select:</option>
+      <option value="1">Available(1)</option>
+      <option value="0">Unavailable(0)</option>
+    </select> <br>
+
+    <label for="quantity">Quantity:</label><br>
+    <input type="number" id="quantity" name="item_quantity" min="0" required><br><br>
+
+    <button id="updatebutton" type="submit">Update</button>
+  </form>
+</div>
+
+</body>
+</html>
+
